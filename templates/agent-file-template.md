@@ -91,7 +91,7 @@ example/                           # Demo application
 
 ## Recent Changes
 
-### Modern Settings UI Package (v0.0.1)
+### Modern Settings UI Package (v1.0.0)
 
 - Complete Flutter package for modern settings screens
 - Material 3 design with customizable themes
