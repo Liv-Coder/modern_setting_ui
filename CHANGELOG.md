@@ -1,6 +1,6 @@
-## 1.0.0
+## 0.0.1
 
-### 🎉 Initial Release
+### 🎉 Initial Development Release
 
 **Modern Settings UI** - A comprehensive Flutter package for creating modern, customizable settings screens with Material 3 design.
 
