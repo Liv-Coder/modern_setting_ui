@@ -1,50 +1,86 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Modern Settings UI Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Package-First Architecture
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+Every feature starts as a standalone Flutter package; Packages must be self-contained, independently testable, documented; Clear purpose required - no organizational-only packages
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Widget Interface
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+Every component exposes functionality via Flutter widgets; Declarative UI protocol: props → widgets, state → internal; Support Material 3 + custom themes
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Test-First (NON-NEGOTIABLE)
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Integration Testing
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Focus areas requiring integration tests: New widget contract tests, Contract changes, Inter-widget communication, Theme integration
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Performance Optimization
+
+60fps rendering required; Memory leaks prohibited; Bundle size optimization mandatory; Accessibility compliance required
+
+### VI. Material 3 Design
+
+Latest Material Design specification compliance; Cross-platform adaptation required; Dark mode support mandatory
+
+### VII. Simplicity
+
+Start simple, YAGNI principles; Maximum 5 core widgets; Clear separation of concerns; Modular architecture
+
+## Technical Standards
+
+### Flutter Requirements
+
+- **SDK**: >=3.22.0
+- **Dart**: >=3.0.0
+- **Platform Support**: iOS, Android, Web
+- **Architecture**: Provider pattern for state management
+
+### Quality Gates
+
+- **Linting**: Zero warnings/errors
+- **Testing**: 100% coverage target
+- **Performance**: <1000ms rendering, <500ms interactions
+- **Accessibility**: WCAG 2.1 AA compliance
+
+### Dependencies
+
+- **Core**: Flutter SDK only
+- **State**: Provider ^6.1.2
+- **Hooks**: flutter_hooks ^0.20.5
+- **I18n**: intl ^0.19.0
+- **Storage**: shared_preferences ^2.5.3
+
+## Development Workflow
+
+### Code Review Requirements
+
+- All PRs must pass flutter analyze (0 issues)
+- All tests must pass (flutter test)
+- Performance benchmarks must be maintained
+- Accessibility audit required for UI changes
+
+### Testing Gates
+
+- Unit tests for all models and utilities
+- Contract tests for all widgets
+- Integration tests for user scenarios
+- Performance tests for rendering and interactions
+
+### Deployment Approval
+
+- Version bump following semantic versioning
+- CHANGELOG.md updated with all changes
+- README.md verified for accuracy
+- Example app tested on all platforms
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Constitution supersedes all other practices; Amendments require documentation, approval, migration plan
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+All PRs/reviews must verify compliance; Complexity must be justified; Use project documentation for runtime development guidance
+
+**Version**: 1.0.0 | **Ratified**: 2025-09-08 | **Last Amended**: 2025-09-08
