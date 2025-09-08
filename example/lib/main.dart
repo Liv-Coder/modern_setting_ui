@@ -291,6 +291,12 @@ class _BasicSettingsTabState extends State<BasicSettingsTab> {
                   title: 'Language',
                   subtitle: 'Select your preferred language',
                   value: _language,
+                  dropdownOptions: const [
+                    DropdownItem(value: 'English', label: 'English'),
+                    DropdownItem(value: 'Spanish', label: 'Español'),
+                    DropdownItem(value: 'French', label: 'Français'),
+                    DropdownItem(value: 'German', label: 'Deutsch'),
+                  ],
                   onChanged: (value) {
                     setState(() {
                       _language = value;

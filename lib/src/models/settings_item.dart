@@ -15,6 +15,25 @@ enum SettingsItemType {
   custom,
 }
 
+/// Represents a dropdown item option.
+class DropdownItem<T> {
+  /// The value of the dropdown item.
+  final T value;
+
+  /// The display label for the dropdown item.
+  final String label;
+
+  /// Optional icon for the dropdown item.
+  final IconData? icon;
+
+  /// Creates a new DropdownItem.
+  const DropdownItem({
+    required this.value,
+    required this.label,
+    this.icon,
+  });
+}
+
 /// Represents an individual setting item in a settings section.
 class SettingsItem {
   /// Unique identifier for the item.
@@ -41,6 +60,9 @@ class SettingsItem {
   /// Callback when the value changes.
   final ValueChanged<dynamic>? onChanged;
 
+  /// Options for dropdown items (only used when type is dropdown).
+  final List<DropdownItem<dynamic>>? dropdownOptions;
+
   /// Creates a new SettingsItem.
   SettingsItem({
     required this.id,
@@ -51,6 +73,9 @@ class SettingsItem {
     this.value,
     this.enabled = true,
     this.onChanged,
-  }) : assert(id.isNotEmpty, 'SettingsItem id cannot be empty'),
-       assert(title.isNotEmpty, 'SettingsItem title cannot be empty');
+    this.dropdownOptions,
+  })  : assert(id.isNotEmpty, 'SettingsItem id cannot be empty'),
+        assert(title.isNotEmpty, 'SettingsItem title cannot be empty'),
+        assert(type != SettingsItemType.dropdown || dropdownOptions != null,
+            'dropdownOptions must be provided for dropdown items');
 }
