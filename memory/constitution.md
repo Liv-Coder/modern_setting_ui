@@ -30,6 +30,18 @@ Latest Material Design specification compliance; Cross-platform adaptation requi
 
 Start simple, YAGNI principles; Maximum 5 core widgets; Clear separation of concerns; Modular architecture
 
+### VIII. Advanced Theming
+
+Dynamic theme switching at runtime; Customizable animations and transitions; Brand integration with company color schemes; Theme persistence and synchronization
+
+### IX. Smart Features
+
+Intelligent auto-complete for setting suggestions; Context-aware adaptive UI; A/B testing framework for settings; ML-based personalization and recommendations
+
+### X. Performance & Scale
+
+Virtualization for 1000+ settings; Lazy loading implementation; Intelligent caching strategies; Full offline mode functionality
+
 ## Technical Standards
 
 ### Flutter Requirements
@@ -45,6 +57,9 @@ Start simple, YAGNI principles; Maximum 5 core widgets; Clear separation of conc
 - **Testing**: 100% coverage target
 - **Performance**: <1000ms rendering, <500ms interactions
 - **Accessibility**: WCAG 2.1 AA compliance
+- **Theming**: Runtime theme switching <200ms, brand integration support
+- **Smart Features**: Auto-complete response <100ms, A/B testing isolation
+- **Scale**: 1000+ settings virtualization, offline mode full functionality
 
 ### Dependencies
 
@@ -53,6 +68,8 @@ Start simple, YAGNI principles; Maximum 5 core widgets; Clear separation of conc
 - **Hooks**: flutter_hooks ^0.20.5
 - **I18n**: intl ^0.19.0
 - **Storage**: shared_preferences ^2.5.3
+- **Caching**: flutter_cache_manager (optional for advanced caching)
+- **ML**: tflite_flutter (optional for personalization)
 
 ## Development Workflow
 
@@ -69,6 +86,10 @@ Start simple, YAGNI principles; Maximum 5 core widgets; Clear separation of conc
 - Contract tests for all widgets
 - Integration tests for user scenarios
 - Performance tests for rendering and interactions
+- Theme switching tests (<200ms validation)
+- Smart feature tests (auto-complete, A/B testing)
+- Scale tests (1000+ settings, offline mode)
+- Accessibility tests for all new features
 
 ### Deployment Approval
 
@@ -83,4 +104,4 @@ Constitution supersedes all other practices; Amendments require documentation, a
 
 All PRs/reviews must verify compliance; Complexity must be justified; Use project documentation for runtime development guidance
 
-**Version**: 1.0.0 | **Ratified**: 2025-09-08 | **Last Amended**: 2025-09-08
+**Version**: 1.1.0 | **Ratified**: 2025-09-08 | **Last Amended**: 2025-09-08

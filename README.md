@@ -12,6 +12,9 @@ A Flutter package for creating modern, customizable settings screens with Materi
 - 💾 Optional persistence with SharedPreferences
 - ⚡ Smooth 60fps performance
 - 🧩 Modular and extensible architecture
+- 🧠 **Smart Features**: Context awareness, A/B testing, personalization
+- 🎭 **Advanced Animations**: Custom curves, duration controls, preview system
+- 📊 **Analytics Ready**: User interaction tracking and insights
 
 ## Getting Started
 
@@ -95,6 +98,77 @@ Groups related settings items with expandable sections.
 The main container widget that orchestrates the settings screen.
 
 ## Advanced Usage
+
+### Smart Features
+
+#### Context Awareness
+
+The package includes intelligent context awareness that learns from user interactions:
+
+```dart
+final contextService = ContextAwarenessService();
+
+// Analyze user interaction patterns
+final insights = await contextService.analyzeUserInteractions();
+
+// Get personalized suggestions
+final suggestions = await contextService.getPersonalizedSuggestions();
+```
+
+#### A/B Testing Framework
+
+Built-in A/B testing with traffic allocation and results tracking:
+
+```dart
+final abTesting = ABTestingFramework();
+
+// Register an experiment
+await abTesting.registerExperiment(
+  Experiment(
+    id: 'theme_variants',
+    variants: ['classic', 'modern', 'minimal'],
+    trafficAllocation: [0.5, 0.3, 0.2],
+  ),
+);
+
+// Get variant for current user
+final variant = await abTesting.getVariant('theme_variants');
+```
+
+#### Personalization Engine
+
+AI-powered personalization that adapts to user preferences:
+
+```dart
+final personalization = PersonalizationEngine();
+
+// Learn from user interactions
+await personalization.recordInteraction('theme_changed', 'dark_mode');
+
+// Get personalized recommendations
+final recommendations = await personalization.getRecommendations();
+```
+
+#### Custom Animations
+
+Advanced animation system with preview and customization:
+
+```dart
+// Configure custom animations
+final config = AnimationConfig(
+  enabled: true,
+  curve: Curves.elasticOut,
+  duration: Duration(milliseconds: 500),
+);
+
+// Preview animation
+final preview = CustomAnimationsWidget(
+  config: config,
+  onChanged: (newConfig) {
+    // Handle animation changes
+  },
+);
+```
 
 ### Persistence
 

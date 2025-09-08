@@ -1,9 +1,9 @@
 name: modern_setting_ui
-description: "A Flutter package for creating modern, customizable settings screens."
+description: "A Flutter package for creating modern, customizable settings screens with advanced theming, smart features, and enterprise-scale performance."
 version: 1.0.0
-homepage: https://github.com/Naawaal/modern_setting_ui
-repository: https://github.com/Naawaal/modern_setting_ui
-issue_tracker: https://github.com/Naawaal/modern_setting_ui/issues
+homepage: https://github.com/Liv-Coder/modern_setting_ui
+repository: https://github.com/Liv-Coder/modern_setting_ui
+issue_tracker: https://github.com/Liv-Coder/modern_setting_ui/issues
 
 environment:
   sdk: ^3.0.0

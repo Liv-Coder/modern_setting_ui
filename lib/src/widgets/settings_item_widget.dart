@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/settings_item.dart';
-import '../themes/settings_theme.dart';
+import '../models/settings_theme.dart';
 
 /// Widget for displaying individual settings items.
 class SettingsItemWidget extends StatelessWidget {

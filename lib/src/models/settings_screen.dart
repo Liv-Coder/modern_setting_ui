@@ -1,5 +1,5 @@
 import 'settings_section.dart';
-import '../themes/settings_theme.dart';
+import 'settings_theme.dart';
 
 /// Represents the main settings screen containing sections and items.
 class SettingsScreen {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/settings_section.dart';
-import '../themes/settings_theme.dart';
+import '../models/settings_theme.dart';
 import 'settings_item_widget.dart';
 
 /// Widget for displaying a settings section with expandable items.
@@ -50,8 +50,7 @@ class _SettingsSectionWidgetState extends State<SettingsSectionWidget> {
                 if (widget.section.icon != null) ...[
                   Icon(
                     widget.section.icon,
-                    color: widget.theme.primaryColor ??
-                        Theme.of(context).primaryColor,
+                    color: widget.theme.primaryColor,
                   ),
                   const SizedBox(width: 16.0),
                 ],

@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:modern_setting_ui/src/models/settings_screen.dart';
 import 'package:modern_setting_ui/src/models/settings_section.dart';
 import 'package:modern_setting_ui/src/models/settings_item.dart';
-import 'package:modern_setting_ui/src/themes/settings_theme.dart';
+import 'package:modern_setting_ui/src/models/settings_theme.dart';
 import 'package:modern_setting_ui/src/models/user_preference.dart';
 
 void main() {

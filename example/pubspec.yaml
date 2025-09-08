@@ -16,6 +16,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   modern_setting_ui:
     path: ../
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
 
 dev_dependencies:
   flutter_test:
