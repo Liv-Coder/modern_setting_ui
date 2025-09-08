@@ -2,11 +2,11 @@
 
 A Flutter package for creating modern, customizable settings screens with Material 3 design.
 
-## What's New in v1.1.0
+## What's New in v1.0.0
 
-### 🚀 Major Feature Release
+### 🚀 Complete Modern Settings UI Package
 
-**Advanced Smart Features & Enhanced Animations** - Introducing intelligent context awareness, A/B testing framework, personalization engine, and advanced animation system.
+**Production-Ready Flutter Package** - Comprehensive settings UI solution with advanced smart features, enhanced animations, and Material 3 design.
 
 #### 🧠 Smart Features
 
